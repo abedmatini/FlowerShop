@@ -17,6 +17,64 @@ export default function FlowerlandingPage() {
         />
       </View>
 
+      <View>
+        <View style={styles.featuredSection}>
+          <Text style={styles.sectionTitle}>Featured Flowers</Text>
+          <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+            <View style={styles.flowerCard}>
+              <Image
+              source={require('./assets/images/white-base.avif')}
+              style={styles.flowerImage}
+              />
+              <Text style={styles.flowerTitle}>White Base</Text>
+            </View>
+            
+          <View style={styles.flowerCard}>
+            <Image
+              source={require('./assets/images/Lily.avif')}
+              style={styles.flowerImage}
+            />
+            <Text style={styles.flowerTitle}>Lily</Text>
+          </View>
+          <View style={styles.flowerCard}>
+            <Image
+              source={require('./assets/images/red-rose.avif')}
+              style={styles.flowerImage}
+            />
+            <Text style={styles.flowerTitle}>Lily</Text>
+          </View>
+          <View style={styles.flowerCard}>
+            <Image
+              source={require('./assets/images/tulip.avif')}
+              style={styles.flowerImage}
+            />
+            <Text style={styles.flowerTitle}>Tulip</Text>
+          </View>
+          <View style={styles.flowerCard}>
+            <Image
+              source={require('./assets/images/orchid.avif')}
+              style={styles.flowerImage}
+            />
+            <Text style={styles.flowerTitle}>Orchid</Text>
+          </View>
+          <View style={styles.flowerCard}>
+            <Image
+              source={require('./assets/images/Chrysanthemums.avif')}
+              style={styles.flowerImage}
+            />
+            <Text style={styles.flowerTitle}>Chrysanthemums</Text>
+          </View>
+          </ScrollView>
+        </View>
+        <View style={styles.buttonContainer}>
+        <TouchableOpacity style={styles.button} onPress={() => alert('Shop Now')}>
+        <Text style={styles.buttonText}>Shop Now</Text>
+        </TouchableOpacity>
+          
+        </View>
+
+      </View>
+
 
       <View style={styles.header}>
         <Text style={styles.headerText}>Bllooming Flowers</Text>
@@ -101,6 +159,6 @@ const styles = StyleSheet.create({
     buttonText: {
       color: '#fff',
       fontWeight: 'bold',
-      fontSize:'30px'
+      fontSize:'30'
     },
   });
