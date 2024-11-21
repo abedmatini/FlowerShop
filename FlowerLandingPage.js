@@ -5,9 +5,22 @@ export default function FlowerlandingPage() {
   return (
     <ScrollView style={styles.container}>
       {/* Header Section */}
+      <View style={styles.imageContainer}>
+        <Image source={require('./assets/images/spring-blooming.avif')} style={styles.image} />
+      {/* <Image source={{ uri: 'https://images.unsplash.com/photo-1463043254199-7a3efd782ad1?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }} style={styles.image} /> */}
+      </View>
+
+      <View style={styles.searchContainer}>
+        <TextInput
+        style={styles.textInput}
+        placeholder='Search for flowers...'
+        />
+      </View>
+
+
       <View style={styles.header}>
-        <Text style={styles.headerText}>Blooming Flowers</Text>
-        <Text style={styles.subHeaderText}>Fresh and Beautiful Flowers Delivered to Your Doorstep</Text>
+        <Text style={styles.headerText}>Bllooming Flowers</Text>
+        <Text style={styles.subHeaderText}>FfSresh and Beautiful Flowers Delivered to Your Doorstep</Text>
       </View>      
     </ScrollView>
   );
